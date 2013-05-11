@@ -3,9 +3,10 @@ ptmconvert
 
 A command-line tool to create false-color images of the normals in an RTI/PTM file.
 
-
 Introduction
 ----------------
+
+This is a program created by Tobias Alexander Franke, which I have simply moved to github from his google code page. I do not claim to have created any part of it. You can learn more about Mr. Franke's PTM research here: http://www.tobias-franke.eu/projects/ptm/
 
 Polynomial Texture Maps are special texture files which contain biquadratic polynomial coefficients per pixel, modeling the reflectance behavior under varying incident radiance. Even though the format is in heavy use in archeology, I found that the available open-source implementations are rather sparse. The following code is a one-file C++ converter which reads (at the moment) LRGB encoded PTMs (either uncompressed or with JPEG compression) and dumps the luminance coefficients and the RGB data into separate PNG images. These images can be used without the need to write a PTM reader for instance in web applications using WebGL. The neccessary scale and bias parameters are printed on the console.
 
